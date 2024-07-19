@@ -1,3 +1,5 @@
+@import "../utils/mixins.scss";
+
 .dashboard_main {
   display: flex;
   flex-direction: column;
@@ -14,7 +16,13 @@
 
 .dashboard_wrap {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   row-gap: 48px;
-  column-gap: 55px;
+  column-gap: 30px;
+  
+  @include onDesktop {
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 55px;
+  }
 }

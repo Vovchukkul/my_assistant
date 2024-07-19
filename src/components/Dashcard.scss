@@ -1,45 +1,70 @@
+@import "../utils/mixins.scss";
+
 .dashcard {
   background: rgba(254, 254, 254, 1);
   box-shadow: 0px 4px 16px 0px rgba(31, 59, 75, 0.15);
   border-radius: 35px;
-  height: 253px;
-  width: 625px;
-  padding: 33px 0 35px 38px;
-
+  
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  gap: 27px;
   box-sizing: border-box;
+  
+  gap: 13px;
+  height: 200px;
+  width: 250px;
+  padding: 8px 0 8px 8px;
+
+  @include onDesktop {
+    gap: 27px;
+    height: 253px;
+    width: 625px;
+    padding: 33px 0 35px 38px;
+  }
 }
 
 .dashcard_title {
   padding: 0;
   margin: 0;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 500;
   color: rgba(0, 0, 0, 1);
   font-family: 'Montserrat', sans-serif;
+
+  @include onDesktop {
+    font-size: 20px;
+  }
 }
 
 .dashcard_dotted {
   border: 1px dotted rgba(170, 181, 192, 1);
   border-radius: 10px;
-  width: 516px;
-  height: 134px;
+  width: 220px;
+  height: 120px;
   box-sizing: border-box;
 
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
   color: rgba(0, 0, 0, 1);
   font-family: 'Montserrat', sans-serif;
 
-  padding-left: 19px;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-left: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @include onDesktop {
+    width: 516px;
+    height: 134px;
+    font-size: 16px;
+    padding-left: 19px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
 }
 
 .dashcard_first_text {

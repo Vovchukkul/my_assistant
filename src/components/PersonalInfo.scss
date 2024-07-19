@@ -1,12 +1,25 @@
+@import "../utils/mixins.scss";
+
 .profile_info_wrap {
   display: flex;
-  gap: 55px;
+  flex-direction: column;
+  align-items: center;
+  
+  @include onDesktop {
+    gap: 55px;
+    flex-direction: row;
+  }
 }
 
 .profile_info_left {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  align-items: center;
+  gap: 20px;
+
+  @include onDesktop {
+    gap: 40px;
+  }
 }
 
 .basic_info {
@@ -16,10 +29,15 @@
   background: rgba(254, 254, 254, 1);
   box-shadow: 0px 4px 16px 0px rgba(31, 59, 75, 0.15);
   box-sizing: border-box;
-  padding: 36px 45px 40px 30px;
+  padding: 18px 24px 20px 15px;
   border-radius: 35px;
 
-  width: 751px;
+  width: 280px;
+
+  @include onDesktop {
+    width: 751px;
+    padding: 36px 45px 40px 30px;
+  }
 }
 
 .icon_edit {
@@ -90,20 +108,32 @@
   background: rgba(254, 254, 254, 1);
   box-shadow: 0px 4px 16px 0px rgba(31, 59, 75, 0.15);
   border-radius: 35px;
-  width: 751px;
-  padding: 38px 57px 45px 30px;
+  width: 280px;
+  padding: 18px 28px 20px 15px;
 
   display: flex;
   flex-direction: column;
   gap: 35px;
   box-sizing: border-box;
+
+  @include onDesktop {
+    gap: 35px;
+    width: 751px;
+    padding: 38px 57px 45px 30px;
+  }
 }
 
 .photo_bottom {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   gap: 19px;
+
+  @include onDesktop {
+    gap: 19px;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .photo_img {
@@ -139,17 +169,26 @@
 .additional_contacts {
   display: flex;
   flex-direction: column;
-  gap: 38px;
-
+  
   background: rgba(254, 254, 254, 1);
   box-shadow: 0px 4px 16px 0px rgba(31, 59, 75, 0.15);
   box-sizing: border-box;
   border-radius: 35px;
-  width: 751px;
-  padding-left: 30px;
-  padding-right: 45px;
-  padding-top: 27px;
-  padding-bottom: 55px;
+  width: 280px;
+  gap: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  @include onDesktop {
+    gap: 38px;
+    width: 751px;
+    padding-left: 30px;
+    padding-right: 45px;
+    padding-top: 27px;
+    padding-bottom: 55px;
+  }
 }
 
 .additional_contacts_top {
@@ -185,17 +224,26 @@
 .about_yourself {
   display: flex;
   flex-direction: column;
-  gap: 38px;
-
+  
   background: rgba(254, 254, 254, 1);
   box-shadow: 0px 4px 16px 0px rgba(31, 59, 75, 0.15);
   box-sizing: border-box;
   border-radius: 35px;
-  width: 751px;
-  padding-left: 30px;
-  padding-right: 45px;
-  padding-top: 27px;
-  padding-bottom: 55px;
+  width: 280px;
+  gap: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  @include onDesktop {
+    gap: 38px;
+    width: 751px;
+    padding-left: 30px;
+    padding-right: 45px;
+    padding-top: 27px;
+    padding-bottom: 55px;
+  }
 }
 
 .about_yourself_top {
@@ -231,17 +279,26 @@
 .speciality_info {
   display: flex;
   flex-direction: column;
-  gap: 38px;
-
+  
   background: rgba(254, 254, 254, 1);
   box-shadow: 0px 4px 16px 0px rgba(31, 59, 75, 0.15);
   box-sizing: border-box;
   border-radius: 35px;
-  width: 751px;
-  padding-left: 30px;
-  padding-right: 45px;
-  padding-top: 33px;
-  padding-bottom: 56px;
+  width: 280px;
+  gap: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  @include onDesktop {
+    gap: 38px;
+    width: 751px;
+    padding-left: 30px;
+    padding-right: 45px;
+    padding-top: 27px;
+    padding-bottom: 55px;
+  }
 }
 
 .speciality_info_top {
@@ -264,16 +321,30 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  font-size: 16px;
   font-weight: 500;
   color: rgba(93, 113, 124, 1);
   font-family: 'Montserrat', sans-serif;
-
+  
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 25px;
-  height: 200px;
+  font-size: 12px;
+  gap: 10px;
+  height: 280px;
+
+  @include onDesktop {
+    font-size: 16px;
+    gap: 25px;
+    height: 200px;
+  }
+}
+
+.profile_info_right {
+  margin-top: 20px;
+
+  @include onDesktop {
+    margin-top: 0;
+  }
 }
 
 .number_for_entry {
@@ -281,12 +352,17 @@
   box-shadow: 0px 4px 16px 0px rgba(31, 59, 75, 0.15);
   box-sizing: border-box;
   border-radius: 35px;
-  width: 511px;
+  width: 280px;
 
-  padding: 28px 34px 30px 32px;
+  padding: 18px 15px 18px 15px;
 
   display: flex;
   flex-direction: column;
+
+  @include onDesktop {
+    width: 511px;
+    padding: 28px 34px 30px 32px;
+  }
 }
 
 .number_title {
@@ -297,20 +373,32 @@
   color: rgba(0, 0, 0, 1);
   font-family: 'Montserrat', sans-serif;
 
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+
+  @include onDesktop {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
 }
 
 .number_subtitle {
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   color: rgba(0, 0, 0, 1);
   font-family: 'Montserrat', sans-serif;
-  line-height: 35px;
+  line-height: 17px;
 
-  margin-bottom: 13px;
-  max-width: 377px;
+  margin-bottom: 10px;
+  max-width: 250px;
+
+  @include onDesktop {
+    font-size: 14px;
+    line-height: 35px;
+    margin-bottom: 13px;
+    max-width: 377px;
+  }
 }
 
 .orange_block {
@@ -320,12 +408,19 @@
   border-radius: 10px;
   box-sizing: border-box;
 
-  padding: 29px 72px 29px 18px;
+  padding: 15px 18px 15px 18px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 18px;
+  gap: 10px;
+
+  @include onDesktop {
+    height: 92px;
+    width: 100%;
+    padding: 29px 72px 29px 18px;
+    gap: 18px;
+  }
 }
 
 .icon_warning {
