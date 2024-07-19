@@ -1,0 +1,32 @@
+[
+  { 
+    "id": 1, 
+    "name": "Leanne Graham", 
+    "tel": "0984536743", 
+    "password": "12345" 
+  },
+  { 
+    "id": 2, 
+    "name": "Ervin Howell", 
+    "tel": "0984526743", 
+    "password": "12345" 
+  },
+  { 
+    "id": 3, 
+    "name": "Clementine Bauch", 
+    "tel": "0984536743", 
+    "password": "12345" 
+  },
+  { 
+    "id": 4, 
+    "name": "Patricia Lebsack", 
+    "tel": "0984536763", 
+    "password": "12345" 
+  },
+  { 
+    "id": 5, 
+    "name": "Chelsey Dietrich", 
+    "tel": "0974536763", 
+    "password": "12345" 
+  }
+]

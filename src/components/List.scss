@@ -1,0 +1,31 @@
+.main_list {
+  width: 257px;
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.item {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Montserrat', sans-serif;
+}

@@ -1,0 +1,63 @@
+.myorders {
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+  margin-bottom: 200px;
+  width: 1316px;
+}
+
+.myorders_title {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Unbounded', sans-serif;
+}
+
+.myorders_filter_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 16px 0px rgba(31, 59, 75, 0.15);
+  border-radius: 35px;
+  box-sizing: border-box;
+  padding: 20px 0 20px 37px;
+}
+
+.myorders_text {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(93, 113, 124, 1);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.myorders_filter {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  list-style: none;
+}
+
+.myorders_items {
+  padding-inline: 28px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: rgba(224, 224, 224, 1);
+
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(93, 113, 124, 1);
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}

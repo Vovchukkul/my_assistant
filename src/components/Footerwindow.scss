@@ -1,0 +1,153 @@
+@import "../utils/mixins.scss";
+
+.footer-window {
+  background: rgba(244, 119, 13, 1);
+  box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.05);
+  border-radius: 20px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  gap: 90px;
+  max-width: 1232px;
+  margin-top: -100px;
+  margin-bottom: 30px;
+  padding-inline: 16px;
+  padding-top: 16px;
+  padding-bottom: 10px;
+
+  @include onDesktop {
+    gap: 184px;
+    max-width: 1232px;
+    margin-top: -100px;
+    margin-bottom: 64px;
+    padding-inline: 24px;
+    padding-top: 24px;
+  }
+}
+
+.window-title {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Unbounded', sans-serif;
+  font-size: 20px;
+  max-width: 600px;
+  margin-bottom: 20px;
+  
+  @include onDesktop {
+    margin-bottom: 315px;
+    font-size: 44px;
+    max-width: 600px;
+  }
+}
+
+.window-subtitle {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Unbounded', sans-serif;
+  font-size: 12px;
+  max-width: 600px;
+  margin-bottom: 16px;
+
+  @include onDesktop {
+    font-size: 20px;
+    max-width: 600px;
+    margin-bottom: 16px;
+  }
+}
+
+.window-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+
+  @include onDesktop {
+    gap: 12px;
+  }
+}
+
+.number-button {
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 1);
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 1);
+  height: 40px;
+
+  @include onDesktop {
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 1);
+    height: 40px;
+  }
+}
+
+.number__number {
+  display: none;
+
+  @include onDesktop {
+    display: block;
+  }
+}
+
+.number__tel-icon {
+  background-image: url(../images/icons/iconoir_smartphone-device-blaxk.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 24px;
+  width: 24px;
+
+  @include onDesktop {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.comment-button {
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Montserrat', sans-serif;
+  padding-inline: 20px;
+  height: 40px;
+  font-size: 14px;
+  width: 200px;
+
+  @include onDesktop {
+    padding-inline: 20px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+.number__link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
+
+.mailbox {
+  display: none;
+
+  @include onDesktop {
+    display: block;
+  }
+}

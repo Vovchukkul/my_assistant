@@ -1,0 +1,261 @@
+.logo {
+  height: 33px;
+  width: 142px;
+}
+
+.login__contact {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.login__tel-icon {
+  background-image: url(../../images/icons/iconoir_smartphone-device.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+
+.login__number {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.login_top-bar {
+  background: linear-gradient(180deg,#1C323F 0%, #1E3441 100%);
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  height: 105px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 60px;
+
+  margin-bottom: 30px;
+}
+
+.login_main_wrap {
+  padding-inline: 60px;
+  margin-bottom: 37px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.login_main {
+  background-color: rgba(235, 241, 245, 1);
+  border-radius: 35px;
+  max-width: 1335px;
+
+  padding-inline: 69px;
+  padding-bottom: 70px;
+  padding-top: 70px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 198px;
+}
+
+.welcome_list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  max-width: 593px;
+}
+
+.welcome_title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Unbounded', sans-serif;
+  width: 562px;
+
+  margin-bottom: 21px;
+}
+
+.welcome_subtitle {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 41px;
+}
+
+.login_form {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 16px 0px rgba(31, 59, 75, 0.15);
+  border-radius: 35px;
+  padding-inline: 37px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  max-width: 406px;
+}
+
+.form_title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 40px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  margin-bottom: 37px;
+}
+
+.input_name {
+  border: 1px solid rgba(198, 209, 215, 1);
+  border-radius: 10px;
+}
+
+.input_tel {
+  border: 1px solid rgba(198, 209, 215, 1);
+  border-radius: 10px;
+}
+
+.input_password {
+  border: 1px solid rgba(198, 209, 215, 1);
+  border-radius: 10px;
+  padding-right: 18px;
+  position: relative;
+  width: 100%;
+}
+
+.input_repeat_password {
+  border: 1px solid rgba(198, 209, 215, 1);
+  border-radius: 10px;
+}
+
+.input {
+  height: 52px;
+  padding: 17px 0 15px 16px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.input::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(81, 88, 92, 1);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form_subtitle {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Montserrat', sans-serif;
+
+  margin-bottom: 39px;
+}
+
+.conditions {
+  text-decoration: underline;
+  font-weight: 600;
+
+  margin: 0 auto;
+}
+
+.form_button {
+  width: 332px;
+  height: 56px;
+  background-color: rgba(244, 119, 13, 1);
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+
+.button_wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.form_bottom {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form_bottom-link {
+  font-weight: 600;
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 1);
+}
+
+.forget {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: underline;
+  padding-bottom: 23px;
+  margin-bottom: 23px;
+
+  border-bottom: 1px solid rgba(198, 209, 215, 1);
+}
+
+.need_to_register {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.register_link {
+  font-weight: 600;
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.password_wrapper {
+  position: relative;
+}
+
+.eye_icon {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  cursor: pointer;
+}
+
+.forget_link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
+
+.blur {
+  opacity: 0.7;
+  background-color: red;
+}
+
+.checked {
+  opacity: 1;
+  background-color: green;
+}

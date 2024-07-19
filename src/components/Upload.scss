@@ -1,0 +1,25 @@
+.uploaded_image_circle {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%; // Circular shape
+  overflow: hidden;
+  background-color: rgb(128, 128, 128);
+  cursor: pointer; // Make it look clickable
+}
+
+.uploaded_image_circle {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative; /* Ensure proper positioning */
+}
+
+.editor-canvas {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the canvas */
+}

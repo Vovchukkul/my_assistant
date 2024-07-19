@@ -1,0 +1,76 @@
+@import "../../utils/mixins";
+
+.loading {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(28, 50, 63, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading_icon {
+  animation: rotateIcon 1s ease-in-out forwards, scaleBoth 0.5s 1.5s ease-in-out forwards;
+  height: 100px;
+  width: 100px;
+
+  @include onDesktop {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+.loading_hyper {
+  animation: appearHyper 1s 1.5s ease-in-out forwards;
+  opacity: 0;
+  height: 67px;
+  width: 240px;
+
+  @include onDesktop {
+    height: 133px;
+    width: 567px;
+  }
+}
+
+@keyframes rotateIcon {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes appearHyper {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleBoth {
+  from {
+    transform: scale(1) rotateY(180deg);
+  }
+  to {
+    transform: scale(0.5) rotateY(180deg);
+  }
+}
+
+@keyframes scaleHyper {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.5);
+  }
+}

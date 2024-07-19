@@ -1,0 +1,35 @@
+.rate {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 189px;
+}
+
+.rate_title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Unbounded', sans-serif;
+}
+
+.rate_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 68px;
+}
+
+.rating_img {
+  height: 125px;
+  width: 125px;
+}
+
+.rating_text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Montserrat', sans-serif;
+}

@@ -1,0 +1,20 @@
+.dashboard_main {
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+}
+
+.dashboard_title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Unbounded', sans-serif;
+}
+
+.dashboard_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 55px;
+}

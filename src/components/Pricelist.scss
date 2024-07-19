@@ -1,0 +1,39 @@
+.pricelist {
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+  align-items: flex-start;
+
+  width: 1316px;
+}
+
+.pricelist_title {
+  font-size: 32px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Unbounded', sans-serif;
+}
+
+.pricelist_main {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 100%;
+}
+
+.add_service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  color: rgba(244, 119, 13, 1);
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 16px 0px rgba(31, 59, 75, 0.15);
+  border: none;
+  border-radius: 50%;
+  font-size: 30px;
+  
+  margin: 0 auto;
+  cursor: pointer;
+}

@@ -1,0 +1,105 @@
+.logo {
+  height: 33px;
+  width: 142px;
+}
+
+.profile-wrap {
+  background-color: rgba(250, 251, 252, 1);
+}
+
+.profile__contact {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.profile__tel-icon {
+  background-image: url(../../images/icons/iconoir_smartphone-device.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+
+.profile__number {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+}
+
+.profile_top-bar {
+  background: linear-gradient(180deg,#1C323F 0%, #1E3441 100%);
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  height: 105px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 60px;
+
+  margin-bottom: 30px;
+}
+
+.profile_main_wrap {
+  padding-inline: 60px;
+  margin-bottom: 115px;
+
+  display: flex;
+  justify-content: center;
+  background-color: rgba(250, 251, 252, 1);
+}
+
+.profile_main {
+  background-color: rgba(250, 251, 252, 1);
+}
+
+.profile_footer {
+  position: sticky;
+  top: 100vh;
+  width: 100%;
+}
+
+.profile_nav {
+  margin-bottom: 84px;
+}
+
+.profile_list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+}
+
+.profile_item {
+  height: 60px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 16px 0px rgba(31, 59, 75, 0.15);
+  border-radius: 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-inline: 50px;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(244, 119, 13, 1);
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.active {
+  border: 2px solid rgba(244, 119, 13, 1);
+  box-sizing: border-box;
+}
+
+.order_list {
+  justify-content: start;
+}

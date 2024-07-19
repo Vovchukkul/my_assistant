@@ -1,0 +1,56 @@
+@import "../utils/mixins.scss";
+
+.block_about {
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 16px 0px rgba(29, 51, 64, 0.1);
+  border-radius: 16px;
+  width: 250px;
+  height: 300px;
+
+  gap: 16px;
+  padding-inline: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  @include onDesktop {
+    width: 100%;
+    height: 150px !important;
+    gap: 35px;
+    padding-inline: 31.5px;
+    padding-top: 47.5px;
+    padding-bottom: 47.5px;
+  }
+}
+
+.number {
+  margin: 0;
+  padding: 0;
+
+  font-size: 45px;
+  font-weight: 700;
+  color: rgba(244, 119, 13, 1);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.block_about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  font-family: 'Montserrat', sans-serif;
+  width: 250px;
+}
+
+.block_about-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+}
+
+.block_about-subtext {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+}

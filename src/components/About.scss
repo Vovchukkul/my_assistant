@@ -1,0 +1,46 @@
+.block_about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 16px 0px rgba(31, 59, 75, 0.15);
+  padding-inline: 41px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-radius: 35px;
+  height: 150px;
+  box-sizing: border-box;
+}
+
+.number {
+  margin: 0;
+  padding: 0;
+
+  font-size: 45px;
+  font-weight: 700;
+  color: rgba(244, 119, 13, 1);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.block_about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  font-family: 'Montserrat', sans-serif;
+  width: 434px;
+}
+
+.block_about-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+}
+
+.block_about-subtext {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+}

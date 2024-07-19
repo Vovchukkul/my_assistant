@@ -1,0 +1,32 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 277px;
+  height: auto;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: rgba(227, 227, 227, 1);
+  height: 225px;
+  width: 225px;
+}
+
+.name, .speciality {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.name {
+  margin: 24px 0 10px;
+}
+
+.speciality {
+  text-align: center;
+  margin: 0;
+}

@@ -1,0 +1,33 @@
+.locations {
+  display: flex;
+  flex-direction: column;
+  width: 1316px;
+}
+
+.locations_title {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Unbounded', sans-serif;
+  margin-bottom: 40px;
+}
+
+.add_location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  color: rgba(244, 119, 13, 1);
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 16px 0px rgba(31, 59, 75, 0.15);
+  border: none;
+  border-radius: 50%;
+  font-size: 30px;
+  
+  margin: 0 auto;
+  cursor: pointer;
+  margin-top: 40px;
+}

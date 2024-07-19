@@ -1,0 +1,171 @@
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Unbounded', sans-serif;
+@import "../utils/mixins.scss";
+
+.header {
+  background: linear-gradient(180deg,#1C323F 0%, #1E3441 100%);
+  margin-bottom: 60px;
+
+  @include onDesktop {
+    margin-bottom: 121px;
+  }
+}
+
+.header__middle {
+  padding-inline: 16px;
+
+  @include onDesktop {
+    padding-inline: 32px;
+  }
+}
+
+.top-bar {
+  padding-inline: 16px;
+  padding-top: 16px;
+  margin-bottom: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include onDesktop {
+    padding-inline: 32px;
+    padding-top: 32px;
+    margin-bottom: 80px;
+  }
+
+}
+
+.top-bar__contact {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.top-bar__tel-icon {
+  display: none;
+
+  @include onDesktop {
+    background-image: url(./../images/icons/iconoir_smartphone-device.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.top-bar__number {
+  display: none;
+
+  @include onDesktop {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+  }
+}
+
+.top-bar__logo {
+  cursor: pointer;
+  height: 25px;
+  width: 90px;
+  margin-left: -100px;
+
+  @include onDesktop {
+    height: 33px;
+    width: 142px;
+  }
+}
+
+.top-bar__buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  @include onDesktop {
+    gap: 16px;
+  }
+}
+
+.login {
+  background: linear-gradient(180deg,#1C323F 0%, #1E3441 100%);
+  border: none;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  font-size: 10px;
+
+  @include onDesktop {
+    font-size: 14px;
+  }
+}
+
+.registration {
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-size: 10px;
+  height: 24px;
+  width: 65px;
+  font-weight: 600;
+
+  @include onDesktop {
+    font-size: 14px;
+    height: 48px;
+    width: 131px;
+    font-weight: 600;
+  }
+}
+
+.header__title {
+  text-align: center;
+  font-family: 'Unbounded', sans-serif;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  font-size: 22px;
+  margin-bottom: 4px;
+
+  @include onDesktop {
+    font-size: 45px;
+    margin-bottom: 4px;
+  }
+}
+
+.header__subtitle {
+  text-align: center;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-family: 'Unbounded', sans-serif;
+  
+  margin-bottom: 80px;
+  font-size: 35px;
+
+  @include onDesktop {
+    margin-bottom: 16px;
+    font-size: 65px;
+  }
+}
+
+.header__info {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Montserrat', sans-serif;
+
+  margin-bottom: 140px;
+}
+
+.header__bottom {
+  display: flex;
+  justify-content: center;
+  
+  position: relative;
+  top: 60px;
+}

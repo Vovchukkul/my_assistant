@@ -1,0 +1,29 @@
+.f-main-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Unbounded', sans-serif;
+  margin-bottom: 16px;
+}
+
+.f-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.f-item {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Montserrat', sans-serif;
+}

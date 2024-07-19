@@ -1,0 +1,143 @@
+.settings_main_left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+  width: 1316px;
+}
+
+.settings_title {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Unbounded', sans-serif;
+}
+
+.settings_main {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.section {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 16px 0px rgba(31, 59, 75, 0.15);
+  border-radius: 35px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 34px 37px 47px 38px;
+
+  width: 751px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.input_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.section_title {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Montserrat', sans-serif;
+
+  margin-bottom: 38px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(93, 113, 124, 1);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.submit_button {
+  background-color: rgba(244, 119, 13, 1);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Montserrat', sans-serif;
+  height: 56px;
+  cursor: pointer;
+}
+
+.additional_contact {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 4px 21px 32px;
+  background: rgba(254, 254, 254, 1);
+  box-shadow: 0px 4px 16px 0px rgba(31, 59, 75, 0.15);
+  border-radius: 35px;
+  width: 511px;
+  gap: 0;
+}
+
+.additional_title {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Montserrat', sans-serif;
+
+  margin-bottom: 25px;
+}
+
+.additional_input {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(93, 113, 124, 1);
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+}
+
+.additional_warning {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+  background: rgba(244, 119, 13, 0.2);
+  border-radius: 10px;
+  padding: 20px 72px 20px 18px;
+  width: 445px;
+  box-sizing: border-box;
+}
+
+.icon_warning {
+  height: 30px;
+  width: 30px;
+}
+
+.additional_text {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.link_to_personal_info {
+  color: rgba(244, 119, 13, 1);
+  text-decoration: underline;
+}

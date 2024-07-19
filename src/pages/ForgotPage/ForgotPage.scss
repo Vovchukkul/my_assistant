@@ -1,0 +1,35 @@
+.forgot_title {
+  margin-bottom: 20px;
+}
+
+.form_subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 30px;
+}
+
+.send_code_again {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: underline;
+  align-self: flex-end;
+}
+
+.form_bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.form_bottom-link {
+  cursor: pointer;
+}
