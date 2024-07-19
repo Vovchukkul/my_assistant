@@ -12,6 +12,7 @@ import { User } from './types/User';
 import usersFromServer from './api/users.json';
 import { useLocalStorage } from './services/useLocalStorage';
 import { RegisterPage } from './pages/RegistrationPage/RegistrationPage';
+import { getNewId } from './services/user';
 
 const initialUsers = usersFromServer;
 
@@ -21,6 +22,18 @@ function App() {
 
   const checkFunc = (phoneNum: string, password: string) => {
     const currUser = users.find(user => user.tel === `${phoneNum}` && user.password === `${password}`) || null;
+    setSelectedUser(currUser);
+  }
+
+  const registerUser = (name: string, phone: string, password: string) => {
+    const currUser: User = {
+      id: getNewId(users),
+      name: name,
+      tel: phone,
+      password: password,
+      speciality: '',
+    };
+
     setSelectedUser(currUser);
   }
 
@@ -34,7 +47,7 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<HomePage users={users} />} />
-        <Route path='registration' element={<RegisterPage onSubmit={onAdd} />} />
+        <Route path='registration' element={<RegisterPage onSubmit={onAdd} onRegister={registerUser} />} />
         <Route path='login' element={<LoginPage user={selectedUser} onCheck={checkFunc} />} />
         <Route path='profile' element={<ProfilePage user={selectedUser} setSelectedUser={setSelectedUser} />} />
         <Route path='forgot' element={<ForgotPage />} />

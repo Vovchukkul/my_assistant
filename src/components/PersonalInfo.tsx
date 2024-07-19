@@ -299,7 +299,7 @@ export const ProfileInfo: React.FC<Props> = ({ user }) => {
         <div className="profile_info_right">
           <div className="number_for_entry">
             <p className="number_title">Телефон для входу</p>
-            <p className="number_subtitle"><span className="gray">Основний номер для входу:</span> *Тут писатиметься, що вказано під час реєстрації*</p>
+            <p className="number_subtitle"><span className="gray">Основний номер для входу:</span> {user?.tel}</p>
             <div className="orange_block">
               <div className="icon_warning" />
               <p className="orange_block_text">

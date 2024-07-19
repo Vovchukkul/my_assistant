@@ -3,7 +3,7 @@ import logo from "../../images/HyperTech.svg";
 import { About } from "../../components/About";
 import { Link, useNavigate } from "react-router-dom";
 import { AnotherFooter } from "../../components/AnotherFooter";
-import { SetStateAction, useState } from "react";
+import { useState } from "react";
 import ukraine_flag from "../../images/icons/ukraine-flag.svg";
 import eye_open1 from "../../images/icons/eye.svg";
 import eye_open2 from "../../images/icons/eye.svg";
@@ -11,9 +11,10 @@ import { User } from "../../types/User";
 
 type Props = {
   onSubmit: (user: User) => void;
+  onRegister: (name: string, phone: string, password: string) => void;
 };
 
-export const RegisterPage: React.FC<Props> = ({ onSubmit }) => {
+export const RegisterPage: React.FC<Props> = ({ onSubmit, onRegister }) => {
   const [name, setName] = useState("");
   const [hasNameError, setHasNameError] = useState(false);
 
@@ -94,6 +95,10 @@ export const RegisterPage: React.FC<Props> = ({ onSubmit }) => {
       password: password,
       speciality: 'none',
     });
+
+    onRegister(name, phoneNumber, password);
+
+    navigate('/profile');
 
     reset()
   };

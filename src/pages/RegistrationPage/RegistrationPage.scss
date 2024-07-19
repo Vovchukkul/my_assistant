@@ -1,6 +1,13 @@
+@import "../../utils/mixins.scss";
+
 .logo {
-  height: 33px;
-  width: 142px;
+  height: 25px;
+  width: 90px;
+
+  @include onDesktop {
+    height: 33px;
+    width: 142px;
+  }
 }
 
 .register__contact {
@@ -20,10 +27,14 @@
 }
 
 .register__number {
-  font-size: 14px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 1);
-  text-decoration: none;
+  display: none;
+
+  @include onDesktop {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+  }
 }
 
 .register_top-bar {
@@ -42,47 +53,72 @@
 }
 
 .register_main_wrap {
-  padding-inline: 60px;
-  margin-bottom: 37px;
+  padding-inline: 8px;
+  margin-bottom: 15px;
 
   display: flex;
   justify-content: center;
+
+  @include onDesktop {
+    padding-inline: 60px;
+    margin-bottom: 37px;
+  }
 }
 
 .register_main {
   background-color: rgba(235, 241, 245, 1);
   border-radius: 35px;
   max-width: 1335px;
-
-  padding-inline: 69px;
-  padding-bottom: 70px;
-  padding-top: 70px;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 198px;
-
   box-sizing: border-box;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-inline: 16px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+
+  @include onDesktop {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 198px;
+    padding-inline: 69px;
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
 }
 
 .welcome_list {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
   gap: 25px;
 
-  max-width: 593px;
+  // max-width: 250px;
+
+  @include onDesktop {
+    max-width: 593px;
+  }
 }
 
 .welcome_title {
   margin: 0;
-  font-size: 36px;
   font-weight: 500;
   color: rgba(0, 0, 0, 1);
   font-family: 'Unbounded', sans-serif;
-  width: 562px;
+  
+  font-size: 18px;
+  width: 250px;
+  margin-bottom: 10px;
 
-  margin-bottom: 21px;
+  @include onDesktop {
+    font-size: 36px;
+    width: 562px;
+    margin-bottom: 21px;
+  }
 }
 
 .welcome_subtitle {
@@ -98,11 +134,19 @@
 .register_form {
   background: rgba(255, 255, 255, 1);
   box-shadow: 0px 4px 16px 0px rgba(31, 59, 75, 0.15);
-  border-radius: 35px;
-  padding-inline: 37px;
-  padding-top: 26px;
-  padding-bottom: 26px;
-  max-width: 406px;
+  border-radius: 20px;
+  padding-inline: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 300px;
+
+  @include onDesktop {
+    border-radius: 35px;
+    padding-inline: 37px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    max-width: 406px;
+  }
 }
 
 .form_title {
